@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 class Program
 {
@@ -13,11 +13,11 @@ class Program
         int distance = int.Parse(distanceString);
         int pointCount = 0;
 
-        for (double x = -5.00; x <= 5.00; x += 0.01)
+        for (double x = -(distance); x <= distance; x += 0.01)
         {
-            for (double y = -5.00; y <= 5.00; y += 0.01)
+            for (double y = -(distance); y <= distance; y += 0.01)
             {
-                for (double z = -5.00; z <= 5.00; z += 0.01)
+                for (double z = -(distance); z <= distance; z += 0.01)
                 {
 
                     if (Math.Round(x * x + y * y + z * z, 2) == distance * distance)
@@ -30,7 +30,7 @@ class Program
         }
 
         Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine($"Total points with distance {distanceString} generated: {pointCount}");
+        Console.WriteLine($"Total points with distance {distanceString} LE to origin generated: {pointCount}");
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("type exit to exit");
         Console.ForegroundColor = ConsoleColor.DarkRed;
