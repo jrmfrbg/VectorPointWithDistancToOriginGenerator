@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "generate points that are 5 le away from origin/1.0.0": {
+    "generate points that are * away from origin/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
